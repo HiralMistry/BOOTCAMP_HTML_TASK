@@ -1,23 +1,25 @@
 
-
+/*Top Navigation bar*/
 .topnav{
     position: relative;
     left: 0px;
 }
 
+/*Height wand width of left and right div*/
 .leftside, .rightside{
     height: 100vh;
     width: 100%;
 }
-
+/*This is to auto-fit the mage within div*/
 img {
     max-width: 100%;
     max-height: 100%;
 }
 
+/* Division inside right-half of the page*/
 .content{
     background-color: #fefefe;
-    margin: 5% auto 10% auto;
+    margin: 2% auto 10% auto;
     width: 80%;
 }
 
@@ -41,7 +43,7 @@ input[type=text]:focus, input[type=password]:focus {
 button {
     background-color: #ab1707;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -53,3 +55,21 @@ button {
 button:hover {
     opacity:1;
   }
+
+
+.redfont{
+    color: #ab1707;
+  }
+
+  /*Adding widths to buttons*/
+  .googlebtn, .facebookbtn {
+    float: left;
+    width: 50%;
+  }
+
+  button.googlebtn{
+      background-color: #fc4221;
+  }
+  button.facebookbtn{
+    background-color: #2984f2;
+}
