@@ -1,8 +1,18 @@
 
+/* put . before selector if you are working on class otherwise don't put dot while working on 
+css element itself */
+
 /*Top Navigation bar*/
 .topnav{
+    width: 100%;
+    height: 80px;
     position: relative;
     left: 0px;
+}
+
+.topnav img{
+    float:left;
+    height:100%
 }
 
 /*Height wand width of left and right div*/
@@ -21,6 +31,10 @@ img {
     background-color: #fefefe;
     margin: 2% auto 10% auto;
     width: 80%;
+    text-align: center;
+
+    /*can add text-align for keeing the text and margin-bottom so that they will have 
+    space between two fields by keeping space at bottom*/
 }
 
 /* Full-width input fields */
@@ -31,6 +45,13 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: none;
     background: #f1f1f1;
+}
+
+/*Input field is getting focused when clicked*/
+input[type=text]:focus, input[type=password]:focus {
+    color: #7a0f0f;
+    transition: 0.2s ease;
+    border-bottom: 2px solid #7a0f0f;
 }
 
 /* Adding a background color when the inputs get focus */
@@ -48,28 +69,46 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.9; /*makes the color less bright*/
+    border-radius: 3px;
   }
 
   
-button:hover {
-    opacity:1;
+button:hover, button:focus {
+    opacity:0.9;
+    border-radius: 3px; /*radius at corners of the box*/
+    box-shadow: 0 2px gray;
   }
+
+/*This is submit button which will store the data to database, post operation is happening*/
+submit{
+    
+}
 
 
 .redfont{
     color: #ab1707;
   }
+.redfont:hover{
+    background-color: #dfc8c8;
+    color: black;
+    transition: 0.2s ease; 
+}
 
   /*Adding widths to buttons*/
   .googlebtn, .facebookbtn {
+    margin: 0 5px;
     float: left;
-    width: 50%;
+    width: 90%;
   }
 
   button.googlebtn{
+      float: left;
       background-color: #fc4221;
   }
   button.facebookbtn{
+      float: right;
     background-color: #2984f2;
 }
+/* Use active property so that it will show what is active currently (on which field you 
+have clicked recently) */
