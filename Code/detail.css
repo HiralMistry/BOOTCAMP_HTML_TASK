@@ -95,11 +95,83 @@ a.navFont:hover{
     white-space:nowrap;
     float: left;
     position: relative;
-    width: 800px;
-    height: 500px;
+    width: 750px;
+    height: 150px;
     margin-left: 40px;
     margin-top: 30px;
-    background-color: whitesmoke;
+    background-color: purple;
+    opacity: 0px;
 
 }
+
+.recommended{
+    width: 500px;
+    position: relative;
+    margin-top: 50px;
+    margin-left:60px;
+}
+
+.offer{
+    width: 400px;
+    height: auto;
+    background-color: white;
+    color: black;
+    float: right;
+    border: 2px solid tomato;
+    border-radius:  8px;
+    margin-right: 20px;
+    background-color: whitesmoke;
+}
+
+.yourorder{
+    width: 400px;
+    height: 550px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    background-color: rgb(250, 66, 34);
+    color: white;
+}
+
+.offer img{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.yourorder-inside{
+    width: 350px;
+    height: auto;
+    margin-left: 40px;
+
+}
+
+.row{
+    background-color: white;
+    width:100%;
+    float:left;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.btn-group{
+    background-color: gray;
+    color: black;
+    margin-right: 20px;
+    float: right;
+    border: 0.5px solid black;
+    border-radius: 0px;
+}
+
+.btn-group button{
+    border: 1.5px solid black;
+    border-radius: 0px;
+}
+
+.btn-group button: hover{
+    backround-color: orange;
+}
+
+
+
 
