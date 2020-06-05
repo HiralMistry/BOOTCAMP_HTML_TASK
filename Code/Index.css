@@ -55,7 +55,7 @@ a.navFont:hover{
     width:100%;
     height:100%;
     padding-left:200px;
-    background-color: rgb(253, 212, 212);
+    background-color: whitesmoke;
 }
 
 .carousel-inner img{
@@ -95,4 +95,148 @@ a.navFont:hover{
     color: #c90617;
     font-weight: bold;
 }
+
+.market{
+    width: 100%;
+    height: 380px;
+    float:left;
+    background-color: rgb(214, 202, 202);
+    text-align: center;
+}
+
+.market-inside{
+    width: 1160px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.offer{
+    width: 250px;
+    height: 250px;
+    float:left;
+    margin-left: 20px;  
+    margin-right: 20px;
+    background-color: rgb(141, 194, 35);
+}
+
+.offer img{
+    width:100%;
+    height:100%;
+}
+
+.brands-tag{
+    width:100%;
+    height:100px;
+    background-color: whitesmoke;
+    float:left;
+    text-align: center;
+}
+
+.brands-tag-inside{
+    margin-top: 40px;
+}
+.bestseller{
+    width: 100%;
+    height:400px;
+    float: left;
+    background-color:whitesmoke;
+}
+
+.bestseller-inside{
+    width: 1170px;
+    height: auto;
+    margin-top: 30px;
+    margin-left:50px;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.bestseller .seller{
+    width: 255px;
+    height:270px;
+    float:left;
+    margin:18px 18px;   
+    background-color: white;
+}
+
+.sellerinfo{
+    width: 255px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 15px;
+    float:left;
+}
+
+.sellerinfo button.btn-xs{
+    background-color: rgb(46, 175, 46);
+    color:white;
+    border: 0px;
+}
+
+.sellerinfo button{
+    background-color: gray;
+    color:white;
+    border: 0px;
+    margin-right: 30px;
+}
+
+.sellerinfo button:hover{
+    background-color: white;
+    color:gray;
+    border: 1px solid gray;
+}
+
+.become-member{
+    width:100%;
+    height: 250px;
+    background-color: white;
+    float:left;
+    text-align: center;
+}
+
+.become-member-inside{
+    width: auto;
+    margin-top: 50px;
+}
+
+.become-member-button{
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 510px;
+}
+
+.become-member-button button{
+    background-color: green;
+    color: white;
+}
+
+.become-member-button button:hover{
+    background-color: white;
+    color: green;
+}
+
+.work-with-us{
+    width:100%;
+    height:150px;
+    background-color: whitesmoke;
+    float:left;
+    text-align: center;
+}
+
+.work-with-us-inside{
+    width: auto;
+    margin-top: 50px;
+}
+
+.hovertext{
+    color:red;
+}
+
+.hovertext:hover{
+    color: blue;
+}
+
+
+
 

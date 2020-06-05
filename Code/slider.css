@@ -1,61 +1,56 @@
-#tslshow {
-  position:absolute;
-  left:0;
-  width:1200px;
-  
-  }
 
-  
-img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-top: 0px;
+.myclass{
+  width: 1200px;
+  height: 300pc;
+  float:left;
 }
-  
-  #leftArrow {
-  
-  width:40px;
-  height:40px;
-  background:#ff0000; 
-  position:absolute;
-  left:0px;
-  }
-  
-  #rightArrow {
-  
-  width:40px;
-  height:40px;
-  background:#ff0000; 
-  position:absolute;
-  right:0px;
-  }
-  
-  #viewContainer {
-  width:360px;
-  height:100%;
-  background:#00ff00;
-  position:absolute;
-  left:50%;
-  margin-left:-180px;
-  overflow:hidden; 
-  }
 
-  .bstimeslider {
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
 
-    width:800px;
-    height:150px;
-    background:#ccc;
-    position:relative;    
-    }
-    
-    .bktibx {
-    
-    float:left;
-    margin:0 40px 0 0 ;
-    font-size:18px;
-    width:60px;
-    display:block;
-    background:#000;
-    color:#fff;
-    
-    }
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
