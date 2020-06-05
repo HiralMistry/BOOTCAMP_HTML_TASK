@@ -16,7 +16,7 @@
                     <img src="food-logo.jpg" width="90px" height="90px" class="d-inline-block align-top">            
                     <b class="logoFont">Eatery Corner </b>
                     <a class="navFont" href="Index.html"> Home </a>
-                    <a class="navFont" href="#"> Listing </a>
+                    <a class="navFont" href="listing.html"> Listing </a>
                     <a class="navFont" href="detail.html"> Details </a>
                     <a class="navFont" href="Signup.html"> Login </a>
                 </nav>
@@ -31,7 +31,7 @@
                 <div class="offerslabel">
                     <span style="font-size: large;font-weight: bold;">OFFERS </span> 299 restaurents
                 </div>
-                <div class="dropdown" style="float:right;margin-right: 70px;margin-top: 30px;">
+                <div class="dropdown" style="float:right;margin-right: 100px;margin-top: 30px;">
                     <!-- btn-lg is for larger button; btn-block is for fixed width of button that will fit into parrnt division-->
                     <button class="btn btn-primary dropdown-toggle btn-block" type=button data-toggle="dropdown">
                         Sort by: Distance<span class="caret"></span></button>
@@ -43,7 +43,161 @@
                 </div>
             </div>
             <div class="filterclass">
+                <div class="heading">
+                    <h3><strong>Filter By</strong></h3>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Location</a>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Seattle</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">New York</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Manhattan</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Los Angeles</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Chicago</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Houston</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Phoenix</label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">All cuisines</a>
+                        </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Italian</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Maxican</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Chinese</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Indian</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Thai</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Japanese</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">American</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Hamburgers</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Pizza</label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Features</a>
+                        </h4>
+                      </div>
+                      <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Free Delivery</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Coupons</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Open Now</label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Delivery time</a>
+                          </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                          <div class="panel-body">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Any time</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">25 min</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">30 min</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">40 min</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">50 min</label>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Category</a>
+                          </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                          <div class="panel-body">
+                              <div class="checkbox">
+                                  <label><input type="checkbox" value="">Delivery</label>
+                              </div>
+                              <div class="checkbox">
+                                  <label><input type="checkbox" value="">Dine-out</label>
+                              </div>
+                              <div class="checkbox">
+                                  <label><input type="checkbox" value="">Cafes</label>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div> 
 
+                <div class="RadioButtonsGroup">
+                    <div class="RadioButtonsGroup-inside1">
+                        <input type="radio" value="Goldpartner">
+                        <label for="male">Gold partner</label><br>
+                        <input type="radio" value="Otherfoodonline">
+                        <label for="female">Other food online</label><br>
+                        <input type="radio" value="FoodCorner">
+                        <label for="other">Food Corner</label>
+                    </div>
+                    <div class="RadioButtonsGroup-inside2">
+                        Use code <strong>05foodcorner55</strong> to get 50% OFF (up to $30) on first 5 orders. T&C apply.
+                    </div>
+                </div>
 
             </div>
 

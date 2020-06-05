@@ -76,17 +76,45 @@ a.navFont:hover{
 
 .filterclass{
     width:250px;
-    height:1400px;
+    height:1250px;
     float:left;
     margin-left: 70px;
     margin-top: 20px;
-    background-color: yellow;
+}
+
+.heading{
+    width:100%;
+    height: auto;
+}
+
+.RadioButtonsGroup{
+    width: 100%;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    float: left;
+    height: 150px;
+}
+
+.RadioButtonsGroup-inside1{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-bottom: 0.7px solid gray;
+}
+
+.RadioButtonsGroup-inside2{
+    width:90%;
+    margin-left: 7%;
+    margin-top: 8px;
+    height: auto;
+    font-size: 11px;
 }
 
 .bestseller{
     width: 800px;
     height:1200px;
-    margin-top: 20px;
+    margin-top: 75px;
     margin-left: 60px;
     float: left;
     background-color:whitesmoke;
