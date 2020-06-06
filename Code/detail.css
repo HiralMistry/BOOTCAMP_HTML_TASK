@@ -139,11 +139,16 @@ a.navFont:hover{
     color:white;
 }
 
+.details{
+    width:100%;
+    height: auto;
+    float:left;
+}
+
 .recommended{
-    width: 500px;
-    position: relative;
-    margin-top: 50px;
-    margin-left:60px;
+    width: 800px;
+    float:left;
+    height: auto;
 }
 
 .offer{
@@ -151,19 +156,19 @@ a.navFont:hover{
     height: auto;
     background-color: white;
     color: black;
-    float: right;
+    float: left;
+    margin-left: 30px;;
     border: 2px solid tomato;
     border-radius:  8px;
-    margin-right: 20px;
     background-color: whitesmoke;
 }
 
 .yourorder{
     width: 400px;
     height: 550px;
-    float: right;
+    float: left;
     margin-top: 50px;
-    margin-right: 20px;
+    margin-left: 30px;
     background-color: rgb(250, 66, 34);
     color: white;
 }
@@ -252,6 +257,13 @@ a.navFont:hover{
     background-color: white;
     color:gray;
     border: 1px solid gray;
+}
+
+.order-summary{
+    width: 450px;
+    float:left;
+    margin-top: 20px;
+    height: auto;
 }
 
 
