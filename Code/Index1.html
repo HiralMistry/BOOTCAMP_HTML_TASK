@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="Index.css">
+        <meta name="viewport"content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <link rel="stylesheet"  href="lightslider.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="lightslider.js"></script> 
+
+        <script>
+            $(document).ready(function() {
+               $("#content-slider").lightSlider({
+                   loop:true,
+                   keyPress:true
+               });
+               $('#image-gallery').lightSlider({
+                   gallery:true,
+                   item:1,
+                   thumbItem:9,
+                   slideMargin: 0,
+                   speed:500,
+                   auto:true,
+                   loop:true,
+                   onSliderLoad: function() {
+                       $('#image-gallery').removeClass('cS-hidden');
+                   }  
+               });
+           });
+       </script>
+    </head>
+
+    <style>
+    	ul{
+            list-style: none outside none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .demo .item{
+            margin-top: 0 px;
+            margin-bottom: 40px;
+        }
+        .content-slider li{
+            background-color: whitesmoke;
+            text-align: center;
+            color: #FFF;
+            width: 100px;
+            border: 1px solid rgb(197, 195, 195);
+        }
+        .content-slider h3 {
+            margin: 0;
+            padding:70px 0;
+        }
+        .demo{
+            margin-top: 40px;
+            margin-left: 80px;
+            width: 500px;
+        }
+        .demo img{
+            margin-top: 5px;;
+            width:150px;
+            height: 150px;
+            border-radius:40%;
+        }
+        .image-container{
+            width:100%;
+            height:200px;
+            text-align: center;
+        }
+        .image-container h4{
+            color: black;
+            font-weight: bold;
+        }
+
+    </style>
+
+    <body>
+        <nav class="topnav">
+            <img src="food-logo.jpg" width="90px" height="90px" class="d-inline-block align-top">            
+            <b class="logoFont">Eatery Corner </b>
+            <a class="navFont" href="Index.html"> Home </a>
+            <a class="navFont" href="listing.html"> Listing </a>
+            <a class="navFont" href="detail.html"> Details </a>
+            <a class="navFont" href="Signup.html"> Login </a>
+        </nav>
+        <br>
+
+        <div style="width: 100%; height: auto; float: left;padding-left: 80px;">
+            <h1>Find Awesome Deals in Washington</h1>
+            <p>List of top Restaurents, Cafes, Pubs, and Bars in Seattle, based on trends</p>
+            <br>
+
+            <div class="dropdown" style="float:left; width:170px; height:100%">
+                <!-- btn-lg is for larger button; btn-block is for fixed width of button that will fit into parrnt division-->
+                <button class="btn btn-primary dropdown-toggle btn-lg btn-block" type=button data-toggle="dropdown" 
+                style="background-color:tomato">Quick Serch <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Quick Searches</a></li>
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">Cafes</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </div>
+
+            <!-- Using float:left to keep the blocks next to each other-->
+
+            <div class="col-xs-4" style= "float:left; width: 400px; height:100%">
+                <!-- input-lg is for large input form -->
+                <input class="form-control input-lg" id="focusedInput" type="text" placeholder="Enter your delivery location">
+            </div>
+
+            <div class="container" style= "float:left; width: 200px; height:100%">
+                <button type="button" class="btn btn-success btn-lg btn-block">Success</button>  
+            </div>
+
+        </div>
+
+        <div class ="bodypage" style="height: auto; width:100%;float:left;margin-top: 0px;">
+
+            <div class = "carousel-class">
+                <div class="demo">
+                     <div class="item">
+                         <ul id="content-slider" class="content-slider">
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/indian.jpg" alt="Indian">
+                                    <h4>Indian</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/burger.jpg" alt="Indian">
+                                    <h4>Burger</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/chinese.jpg" alt="Indian">
+                                    <h4>Chinese</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/icecream.jpg" alt="Indian">
+                                    <h4>Ice-cream</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/italian.jpg" alt="Indian">
+                                    <h4>Italian</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/pancake.jpg" alt="Indian">
+                                    <h4>Pancake</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/pizza.jpg" alt="Indian">
+                                    <h4>Pizza</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/salad.jpg" alt="Indian">
+                                    <h4>Salad</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/salald.jpg" alt="Indian">
+                                    <h4>Salad Vegan</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/snacks.jpg" alt="Indian">
+                                    <h4>Snacks</h4>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="image-container">
+                                    <img class="card-img-top" src="slidebar/thai.jpg" alt="Indian">
+                                    <h4>Thai</h4>
+                                </div>
+                             </li>
+                         </ul>
+                     </div>
+             
+                 </div>	
+                
+            </div>
+            <div class="market">
+                <div class="market-inside">
+                    <div class="offer"><img src="offers images/explore.png"></div>
+                    <div class="offer"><img src="offers images/toppicks.jpg"></div>
+                    <div class="offer"><img src="offers images/sale.png"></div>
+                    <div class="offer"><img src="offers images/delivery.png"></div>
+                </div>
+            </div>
+            <div class="brands-tag">
+                <div class="brands-tag-inside">
+                    <h2 style="font-weight: bold;"> Popular Brands</h2>
+                    Top Restaurents, Cafes, Pubs, and Bars in Seattle, based on trends
+                </div>
+            </div>
+
+            <div class="bestseller">
+                <div class="bestseller-inside">
+                    <div class="seller">
+                        <div><img src="best seller/seller1.jpg"></div>                        
+                        <div class="sellerinfo">
+                            <span style="font-weight: bold;font-size: medium;">Chef's Kitchen</span><br>
+                            <span style="color:gray;">North Indian</span><br>
+                            $40
+                            <button class="btn btn-primary btn-xs">new</button>
+                            <button class="btn btn-primary" style="float:right; margin-bottom: 25px;">ADD</button>
+                        </div>
+                    </div>
+                    <div class="seller">
+                        <div><img src="best seller/seller2.jpg"></div>                        
+                        <div class="sellerinfo">
+                            <span style="font-weight: bold;font-size: medium;">Sam's Health Corner</span><br>
+                            <span style="color:gray;">Vegitarian</span><br>
+                            $55
+                            <button class="btn btn-primary btn-xs">new</button>
+                            <button class="btn btn-primary" style="float:right; margin-bottom: 25px;">ADD</button>
+                        </div>
+                    </div>
+                    <div class="seller">
+                        <div><img src="best seller/seller3.jpg"></div>                        
+                        <div class="sellerinfo">
+                            <span style="font-weight: bold;font-size: medium;">Morty Bread Studio</span><br>
+                            <span style="color:gray;">Italian</span><br>
+                            $50
+                            <button class="btn btn-primary btn-xs">new</button>
+                            <button class="btn btn-primary" style="float:right; margin-bottom: 25px;">ADD</button>
+                        </div>
+                    </div>
+                    <div class="seller">
+                        <div><img src="best seller/seller1.jpg"></div>                        
+                        <div class="sellerinfo">
+                            <span style="font-weight: bold;font-size: medium;">Chef's Kitchen</span><br>
+                            <span style="color:gray;">North Indian</span><br>
+                            $40
+                            <button class="btn btn-primary btn-xs">new</button>
+                            <button class="btn btn-primary" style="float:right; margin-bottom: 25px;">ADD</button>
+                        </div>
+                    </div>                                                
+                </div>
+            </div>
+            <div class="become-member">
+                <div class="become-member-inside">
+                    <h2> Become a Member</h2>
+                    Explore food ocean today
+                </div>
+                <div class="become-member-button">
+                    <button class="btn btn-block btn-lg">Create an Account <span style="font-weight: bold;">&#x0003E</span></button>
+                </div>
+            </div>
+            <div class="work-with-us">
+                <div class="work-with-us-inside">
+                    <h3> Operate food store or restaurents? <span class="hovertext">Work with us</span></h3>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        
+
+    </body>
+
+</html>
