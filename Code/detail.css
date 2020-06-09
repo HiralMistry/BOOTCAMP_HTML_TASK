@@ -11,6 +11,7 @@
     background-color: #72040d;
 }
 
+
 .topnav img{
     margin-left: 15px;
     float:left;
@@ -27,22 +28,21 @@ b.logoFont{
     margin-left: 15px;
     font-family: foodFont;
     font-size: 45px;
-    text-align:center; 
-    position: left;
-    color: white;
+    color: orange;
 }
 
 a.navFont{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
-    color: whitesmoke;
+    color: orange;
     margin-left: 20px;
 }
 
 a.navFont:hover{
     font-weight: bold;
-    color: white;
+    color: orange;
+    text-decoration: none;
 }
 
 .detail-img{
